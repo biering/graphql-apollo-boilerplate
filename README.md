@@ -1,6 +1,6 @@
 # graphql-apollo-boilerplate
 
-> Simple Express Backend w/ Webpack, ES6, ESLint, Hot-Reload Template
+> Simple GraphQL, Apollo Backend w/ Webpack, ES6, ESLint, Hot-Reload, GraphQL Schema Language Template
 
 ## Includes
 

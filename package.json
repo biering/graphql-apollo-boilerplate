@@ -1,9 +1,9 @@
 {
-  "name": "express-boilerplate",
+  "name": "graphql-apollo-boilerplate",
   "version": "1.0.0",
   "description": "Simple Express Backend w/ Webpack, ES6, ESLint, Hot-Reload Template",
   "author": "Christoph Biering <chryb.q@gmail.com> (http://chryb.me)",
-  "repository": "https://github.com/chryb/express-boilerplate",
+  "repository": "https://github.com/chryb/graphql-apollo-boilerplate",
   "license": "MIT",
   "private": false,
   "scripts": {

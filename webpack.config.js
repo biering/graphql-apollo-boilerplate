@@ -44,6 +44,12 @@ module.exports = [
       ]
     },
 
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, 'src')
+      }
+    },
+
     externals: [nodeExternals()],
 
     plugins: [

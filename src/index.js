@@ -5,7 +5,7 @@ import bodyParser         from 'body-parser'
 import { graphqlExpress,
   graphiqlExpress }       from 'apollo-server-express'
 
-import schema             from './schema'
+import schema             from './graphql/schema'
 
 const app = express()
 const port = 3000

@@ -1,0 +1,44 @@
+{
+  "name": "express-boilerplate",
+  "version": "1.0.0",
+  "description": "Simple Express Backend w/ Webpack, ES6, ESLint, Hot-Reload Template",
+  "author": "Christoph Biering <chryb.q@gmail.com> (http://chryb.me)",
+  "repository": "https://github.com/chryb/express-boilerplate",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "clean": "rm -rf dist && mkdir dist && webpack",
+    "dev": "npm run clean && concurrently --kill-others \"webpack --watch\" \"forever -w ./dist/bundle.js\"",
+    "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
+    "build": "NODE_ENV=prod webpack",
+    "lint": "eslint --ext .js",
+    "start": "npm run build && node dist/bundle.js"
+  },
+  "dependencies": {
+    "apollo-server-express": "^1.1.2",
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "graphql": "^0.11.3",
+    "graphql-tag": "^2.4.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-1": "^6.24.1",
+    "concurrently": "^3.5.0",
+    "eslint": "^4.7.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "forever": "^0.15.3",
+    "path": "^0.12.7",
+    "webpack": "^3.6.0",
+    "webpack-node-externals": "^1.6.0"
+  }
+}

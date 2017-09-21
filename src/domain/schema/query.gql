@@ -1,0 +1,7 @@
+type Query {
+  me: Int
+}
+
+schema {
+  query: Query
+}

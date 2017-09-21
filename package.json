@@ -20,7 +20,8 @@
     "express": "^4.15.4",
     "graphql": "^0.11.3",
     "graphql-tag": "^2.4.2",
-    "graphql-tools": "^1.2.2"
+    "graphql-tools": "^1.2.2",
+    "merge-graphql-schemas": "^1.1.4"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

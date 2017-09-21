@@ -1,5 +1,5 @@
 type Query {
-  me: Int
+  counter: Counter
 }
 
 schema {

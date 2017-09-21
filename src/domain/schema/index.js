@@ -11,7 +11,7 @@ const resolvers = {
       return me
     }
   }
-};
+}
 
 const schema = makeExecutableSchema({
   typeDefs: query,

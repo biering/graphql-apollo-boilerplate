@@ -1,7 +1,7 @@
 import express            from 'express'
 import path               from 'path'
 import bodyParser         from 'body-parser'
-import { graphqlExpress } from 'apollo-server-express'
+import { graphqlExpress, graphiqlExpress } from 'apollo-server-express'
 
 import schema             from './domain/schema'
 
@@ -18,6 +18,10 @@ app.get('/', (req, res) => {
 
 app.use('/graphql', bodyParser.json(), graphqlExpress({
   schema
+}))
+
+app.use('/graphiql', graphiqlExpress({
+  endpointURL: '/graphql'
 }))
 
 app.listen(port, () => {

@@ -31,6 +31,7 @@ app.listen(port, () => {
   log('\n')
   log(chalk.bgGreen.black(`Server listening on http://localhost:${port}/ ..`))
   log('\n')
+
   log(`${chalk.blue('/graphql')}  - endpoint for queries`)
   log(`${chalk.blue('/graphiql')} - endpoint for testing`)
   log('\n')

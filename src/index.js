@@ -29,7 +29,7 @@ app.use('/graphiql', graphiqlExpress({
 app.listen(port, () => {
   const log = console.log
   log('\n')
-  log(chalk.green(`Server started on http://localhost:${port}/`))
+  log(chalk.bgGreen.black(`Server listening on http://localhost:${port}/ ..`))
   log('\n')
   log(`${chalk.blue('/graphql')}  - endpoint for queries`)
   log(`${chalk.blue('/graphiql')} - endpoint for testing`)

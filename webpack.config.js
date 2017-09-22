@@ -5,6 +5,7 @@ const nodeExternals = require('webpack-node-externals');
 module.exports = [
   {
     entry: [
+      'babel-polyfill',
       path.resolve(__dirname, 'src/index.js')
     ],
 
@@ -33,7 +34,7 @@ module.exports = [
           exclude: /node_modules/,
           loader: 'babel-loader',
           query: {
-            presets: ['env', 'stage-1']
+            presets: ['env']
           }
         },
         {

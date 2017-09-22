@@ -6,9 +6,9 @@ import { graphqlExpress,
   graphiqlExpress }       from 'apollo-server-express'
 
 import schema             from './graphql/schema'
+import config             from './config'
 
 const app = express()
-const port = 3000
 
 app.use('/', express.static(path.resolve(__dirname, '/../public')))
 
@@ -26,10 +26,10 @@ app.use('/graphiql', graphiqlExpress({
   endpointURL: '/graphql'
 }))
 
-app.listen(port, () => {
+app.listen(config.PORT, () => {
   const log = console.log
   log('\n')
-  log(chalk.bgGreen.black(`Server listening on http://localhost:${port}/ ..`))
+  log(chalk.bgGreen.black(`Server listening on http://localhost:${config.PORT}/ ..`))
   log('\n')
 
   log(`${chalk.blue('/graphql')}  - endpoint for queries`)
